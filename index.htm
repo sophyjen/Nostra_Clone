@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra E-commerce Website Clone</title>
+     <!-- Tailwind CSS CDN Link-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+     
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+    <div class="popup">
+        <pre style="text-align:center; font-size: large; cursor: pointer;" id="clos">Sign Up and GET 20% OFF for your first Order        X</pre>        
+    </div>
+
+    <!--Resopsive Navbar-->
+    <nav class="p-3 bg-white flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+          
+          
+        <ul class="flex gap-10 text-black hidden md:flex" style="padding-right: 15px;">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.htm">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="">New Arrival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="">Collections</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.htm">Contact Us</a>
+            </li>
+        </ul>
+    </nav>  
+
+    <!--Side Bar-->
+    <section id="sidenav" class="bg-gray-800 fixed z-11 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50%;">
+        <div class="text-left p-5">
+            <p id="close-nav" class="text-right text-white cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-left p-5 text-white" >
+            <li><a class="hover:underline hover:text-black" href="./index.htm">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="">New Arrival</a></li>
+            <li><a class="hover:underline hover:text-black" href="">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-black" href="">Collections</a></li>
+            <li><a class="hover:underline hover:text-black" href="./contact.htm">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!-- Slider -->
+    <div class="slider">
+        <div class="slider-left-button">
+            <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="slider-content">
+            <h1>Level up your style with our</h1>
+            <h4 class="md:text-3xl">Summer Collections</h4>
+            <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <div class="slider-image-container " style="margin-left: -200vw;">
+            <img class="slider-image" src="/images/image1.jpg" width="100%" alt="">
+            <img class="slider-image" src="/images/image2.jpg" width="100%" alt="">
+            <img class="slider-image" src="/images/image3.jpg" width="100%" alt="">
+        </div>
+
+        <div class="slider-right-button">
+            <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <!-- Brands -->
+    <section class="ml-5 mr-5 md:mb-20 ">
+        <h2 class="mt-5 text-3xl font-bold">Brands</h2>
+        <nav class=" brands-item flex justify-between mt-8 text-xs md:text-4xl">
+            <div>
+                <img src="/images/puma.png" alt="puma" class="w-6 md:w-14">
+                <p>Puma</p>
+            </div>
+            <div>
+                <img src="/images/adidas.png" alt="adidas" class="w-6 md:w-14">
+                <p>Adidas</p>
+            </div>
+            <div>
+                <img src="/images/simple.png" alt="simple" class="w-6 md:w-14">
+                <p>Simple</p>
+            </div>
+            <div>
+                <img src="/images/leaves.png" alt="leaves" class="w-6 md:w-14">
+                <p>Leaves</p>
+            </div>
+            <div>
+                <img src="/images/behance.png" alt="behance" class="w-6 md:w-14">
+                <p>Behance</p>
+            </div>
+            <div>
+                <img src="/images/twitch.png" alt="twitch" class="w-6 md:w-14">
+                <p>Twitch</p>
+            </div>
+            <div>
+                <img src="/images/leaves.png" alt="leaves" class="w-6 md:w-14">
+                <p>Leaves</p>
+            </div>
+        </nav>
+    </section>
+
+    
+    <!-- New Arrivals -->
+    <section id="new-arrival" class="ml-5 mr-5">
+        <h2 class="mt-10 text-2xl font-bold ">New Arrivals</h2>
+        <nav class=" newarr mt-10 grid grid-cols-2 md:grid-cols-4 gap-14">
+
+            <div class="newarr">
+                <img class="w-21px" src="/images/NewArrival_img1.jpg" alt="New Arrivals">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="newarr">
+                <img class="w-21px" src="/images/NewArrival_img2.jpg" alt="New Arrivals">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="newarr">
+                <img class="w-21px" src="/images/NewArrival_img3.png" alt="New Arrivals">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div class="newarr">
+                <img class="w-21px" src="/images/NewArrival_img4.png" alt="New Arrivals">
+                <div class="overlay"></div>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Most Wanted -->
+    <div class="init-animate reveal-animate">
+        <h2 style=" margin-top: 5vw;">Most Wanted</h2>
+        <div class=" most-wanted">
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/MostWanted_img1.jpg" alt="Most wanted">
+                <p class="sale-overlay">sale</p>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/NewArrival_img1.jpg" alt="Most wanted">
+                <p class="sale-overlay">sale</p>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/NewArrival_img3.png" alt="Most wanted">
+                <p class="sale-overlay">sale</p>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/NewArrival_img4.png" alt="Most wanted">
+                <p class="sale-overlay">sale</p>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/MostWanted_img3.jpg" alt="Most wanted">
+                <p class="sale-overlay">sale</p>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/NewArrival_img2.jpg" alt="Most wanted">
+                <h3 class="sale-overlay">sale</h3>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+                <p></p>
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/MostWanted_img5.png" alt="Most wanted">
+                <p class="sale-overlay">sale</p>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+            </div>
+            <div class="most-wanted-container">
+                <img style="width: 20vw;" src="/images/MostWanted_img7.png" alt="Most wanted">
+                <p class="sale-overlay">sale</p>
+                <img class="heart-button" src="/images/heart.png" alt="Like">
+            </div>
+        </div>
+    </section>
+
+    <!--Join our News Letter-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5">Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updated, and more</p>
+        <input type="text" class="border border-black p-2 m-3 " style="width: 80%;">
+
+        <div class="p-2">
+            <button type='button'
+                    class="text-white font-bold bg-gray-800 tracking-wide rounded-md text-sm px-4 py-3 w-56">Subscribe</button>
+            
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <section class="bg-gray-800 text-white p-4 flex">
+        <div>           
+            <h1 class="font-bold text-3xl mb-5">Nostra</h1>
+            <p class="mb-4">The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest </p>
+
+            
+            <p class="mt-5">@ 2024 Nostra.com</p>
+        </div>     
+    </section>
+
+    <script src="index.js"> </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra Contacts Page</title>
+
+    <!-- Tailwind CSS CDN Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+<body>
+     <!--Resopsive Navbar-->
+    <nav class="p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+          
+          
+        <ul class="flex gap-10 text-black hidden md:flex" style="padding-right: 15px;">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.htm">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="">New Arrival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="">Collections</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.htm">Contact Us</a>
+            </li>
+        </ul>
+    </nav>  
+
+   <!--Side Bar-->
+   <section id="sidenav" class="bg-gray-800 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50%;">
+        <div class="text-left p-5">
+            <p id="close-nav" class="text-right text-white cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-left p-5 text-white" >
+            <li><a class="hover:underline hover:text-black" href="./index.htm">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="">New Arrival</a></li>
+            <li><a class="hover:underline hover:text-black" href="">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-black" href="">Collections</a></li>
+            <li><a class="hover:underline hover:text-black" href="./contact.htm">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!--Contact Form-->
+    <section class="">
+        <div class="bg-gray-800 dark:bg-gray-900 py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white">Contact Us</h2>
+            
+            <form action="#" class="space-y-8">
+                <div>
+                    <label for="name" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Name:</label>
+                    <input type="text" id="name" class="block p-3 w-full text-sm text-white bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter your name...." required>
+                </div>
+
+                <div>
+                    <label for="email" class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Email:</label>
+                    <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Enter your email id..." required>
+                </div>
+                
+                <div class="sm:col-span-2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-white dark:text-gray-400">Message:</label>
+                    <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                </div>
+                <button type='button'
+                    class="text-black font-bold bg-blue-600 hover:bg-blue-400 tracking-wide rounded-md text-sm px-4 py-3 w-half">Submit</button>
+            </form>
+        </div>        
+      </section>
+
+    <!--Join our News Letter-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5">Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updated, and more</p>
+        <input type="text" class="border border-black p-2 m-3 " style="width: 80%;">
+
+        <div class="p-2">
+            <button type='button'
+                    class="text-white font-bold bg-gray-800 tracking-wide rounded-md text-sm px-4 py-3 w-56">Subscribe</button>
+            
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <section class="bg-gray-800 text-white p-4 flex">
+        <div>           
+            <h1 class="font-bold text-3xl mb-5">Nostra</h1>
+            <p class="mb-4">The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest </p>
+
+            
+            <p class="mt-5">@ 2024 Nostra.com</p>
+        </div>     
+    </section>
+
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/* Sale Offer */
 .popup{
     background-color: black;
     color: white;
@@ -11,13 +12,15 @@
     font-weight: bold;
     text-align: center;
     position: relative;
-}      
+}  
+
 pre{
     position: absolute;
     top: 30%;
     left: 30%;
 }
 
+/* Popup */
 .slider {
     overflow: hidden;
     display: flex;
@@ -100,19 +103,19 @@ pre{
 /* Most Wanted */
 .most-wanted{
     display: flex;
-    justify-content: space-between;
     margin-top: 2vw;
     overflow-x: scroll;
     gap: 20px;  
 }
 
+.most-wanted img{
+    border-radius: 2%;
+    width: 20vw;
+}
+
 .most-wanted-container{
    position: relative; 
 }
-
-.most-wanted img{
-    border-radius: 2%;       
- }
 
 .sale-overlay{
     position: absolute;
@@ -121,52 +124,46 @@ pre{
     font-size: 2vw;
     background-color: red;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0 10px;
     border-radius: 10%;
  }
 
 .most-wanted::-webkit-scrollbar {
-    appearance: none;    
+    width: 10px;  
 }
 
+.most-wanted::-webkit-scrollbar-thumb:hover {
+    background: white; 
+}
 
-/* .sale h3 {
-    position: absolute;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 10px;
-    font-size: 15px;
-    background-color: red;
-    color: white;
-    border-radius: 10px;
-    border: white solid 1px;
-    top: -2%;
-    left: 1%;
-    z-index: 2;
-} */
+/* Track */
+.most-wanted::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    }
+    
+    /* Handle */
+.most-wanted::-webkit-scrollbar-thumb {
+    background: white; 
+    }
 
 .heart-button{
     position: absolute;
     width: 15%;
     bottom: 12%;
     right: 5%;
+    font-size: 3vw;
 }
 
 /* Scroll Animate */
-.init-animate{   
+/* .init-animate{   
     transition: 3s;
 }
 
 .reveal-animate{
     opacity: 1; 
-}
+} */
 
-
-
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     pre{   
         left: 4%;
     }
@@ -186,6 +183,21 @@ pre{
         top: 50%;
         left: 18%;
         z-index: 2;
+    }
+    
+    .review{    
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    .review h1{
+        font-size: 15px;
+        line-height: 17px;
+    }
+
+    .review p{
+        font-size: 10px;
+        line-height: 12px;
     }
 }
 
@@ -221,6 +233,11 @@ pre{
     top: 50%;
     left: 18%;
     z-index: 2;
+}
+
+.review{    
+    padding-top: 5%;
+    padding-bottom: 5%;   
 }
     
 }

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra's Collections Page</title>
+    <!-- Tailwind CSS CDN Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+     
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="popup">
+        <pre style="text-align:center; font-size: large; cursor: pointer;" id="clos">Sign Up and GET 20% OFF for your first Order        X</pre>        
+    </div>
+
+    <!--Resopsive Navbar-->
+    <nav class="p-3 bg-white flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+          
+          
+          <ul class="flex gap-10 text-black hidden md:flex" style="padding-right: 15px;">
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.htm">Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.htm#new-arrival">New Arrival</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.htm#most-wanted">Most Wanted</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./collections.htm">Collections</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.htm">Contact Us</a>
+            </li>
+        </ul>
+    </nav>  
+
+    <!--Side Bar-->
+    <section id="sidenav" class="bg-gray-800 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50%;">
+        <div class="text-left p-5">
+            <p id="close-nav" class="text-right text-white cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-5 text-left p-5 text-white" >
+            <li><a class="hover:underline hover:text-black" href="./index.htm">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="./index.htm#new-arrival">New Arrival</a></li>
+            <li><a class="hover:underline hover:text-black" href="./index.htm#most-wanted">Most Wanted</a></li>
+            <li><a class="hover:underline hover:text-black" href="./collections.htm">Collections</a></li>
+            <li><a class="hover:underline hover:text-black" href="./contact.htm">Contact Us</a></li>
+        </ul>
+    </section>
+
+    <!-- Our Collections-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5 p-2">Our Collections</h1>
+        <input id="search" type="text" placeholder="Search for a Product..." class="border rounded-xl border-black p-2 m-3" style="width: 70%;">
+
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 m-10 gap-10">
+            <div>
+                <img src="/images/MostWanted_img3.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Casual Shirt">
+                <h1 class="font-bold">Casual Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 1399  </p>
+            </div>
+
+            <div>
+                <img src="/images/NewArrival_img1.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Floral Print Shirt">
+                <h1 class="font-bold">Floral Print Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 1299  </p>
+            </div>
+
+            <div>
+                <img src="/images/Beach Green Shirt.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Beach Green Shirt">
+                <h1 class="font-bold">Beach Green Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 1199  </p>
+            </div>
+
+            <div>
+                <img src="/images/Floral Blue Beach Shirt.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Floral Blue Beach Shirt">
+                <h1 class="font-bold">Floral Blue Beach Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 999  </p>
+            </div>
+
+            <div>
+                <img src="/images/Beach Red Shirt.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Beach Red Shirt">
+                <h1 class="font-bold">Beach Red Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 999  </p>
+            </div>
+
+            <div>
+                <img src="/images/Beah White Shirt.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Beach White Shirt">
+                <h1 class="font-bold">Beach White Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 999 </p>
+            </div>
+
+            <div>
+                <img src="/images/Formal Trouser.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Formal Trouser">
+                <h1 class="font-bold">Formal Trouser</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 1699  </p>
+            </div>
+
+            <div>
+                <img src="/images/Party Wear.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Party Wear">
+                <h1 class="font-bold">Party Wear</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 699  </p>
+            </div>
+
+            <div>
+                <img src="/images/MostWanted_img1.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Black Party Shirt">
+                <h1 class="font-bold">Black Party Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 1299 </p>
+            </div>
+
+            <div>
+                <img src="/images/MostWanted_img7.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Beach Olive Shirt">
+                <h1 class="font-bold">Beach Olive Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 1299  </p>
+            </div>
+
+            <div>
+                <img src="/images/NewArrival_img2.jpg" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Casual Trousers">
+                <h1 class="font-bold">Casual Trousers</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 1299 </p>
+            </div>
+
+            <div>
+                <img src="/images/NewArrival_img4.png" class="inline hover:shadow-xl transform hover:translate-y-2" alt="Formal Brown Shirt">
+                <h1 class="font-bold">Formal Brown Shirt</h1>
+                <p><i class="fa-solid fa-indian-rupee-sign" style="color: #0f0f0f;"></i> 499  </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Join our News Letter-->
+    <section class="text-center">
+        <h1 class="text-3xl font-bold mt-5">Join our News Letter</h1>
+        <p>Signup for our email newspaper to get exclusive discounts, updated, and more</p>
+        <input type="text" class="border border-black p-2 m-3 " style="width: 80%;">
+
+        <div class="p-2">
+            <button type='button'
+                    class="text-white font-bold bg-gray-800 tracking-wide rounded-md text-sm px-4 py-3 w-56">Subscribe</button>
+            
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <section class="bg-gray-800 text-white p-4 flex">
+        <div>           
+            <h1 class="font-bold text-3xl mb-5">Nostra</h1>
+            <p class="mb-4">The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest </p>
+
+            
+            <p class="mt-5">@ 2024 Nostra.com</p>
+        </div>     
+    </section>
+
+    <script src="collections.js"> </script>
+</body>
+</html>
+</body>
+</html>

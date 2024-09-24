@@ -11,10 +11,10 @@
     <!--Link Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">  
 </head>
 <body>
-    <div class="popup">
+    <div class="popup z-10">
         <pre style="text-align:center; font-size: large; cursor: pointer;" id="clos">Sign Up and GET 20% OFF for your first Order        X</pre>        
     </div>
 
@@ -41,7 +41,7 @@
             </li>
 
             <li>
-                <a class="hover:underline hover:text-black" href="">Collections</a>
+                <a class="hover:underline hover:text-black" href="/collections.htm">Collections</a>
             </li>
 
             <li>
@@ -51,7 +51,7 @@
     </nav>  
 
     <!--Side Bar-->
-    <section id="sidenav" class="bg-gray-800 fixed z-11 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50%;">
+    <section id="sidenav" class="bg-gray-800 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; left: -50%;">
         <div class="text-left p-5">
             <p id="close-nav" class="text-right text-white cursor-pointer">X</p>
         </div>
@@ -76,10 +76,10 @@
             <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
         </div>
 
-        <div class="slider-image-container " style="margin-left: -200vw;">
-            <img class="slider-image" src="./images/image1.jpg" width="100%" alt="">
-            <img class="slider-image" src="./images/image2.jpg" width="100%" alt="">
-            <img class="slider-image" src="./images/image3.jpg" width="100%" alt="">
+        <div class="slider-image-container " style="margin-left: 0vw;">
+            <img class="slider-image" src="./images/image1.jpg" width="100%" alt="Trending clothes">
+            <img class="slider-image" src="./images/image2.jpg" width="100%" alt="Trending clothes">
+            <img class="slider-image" src="./images/image3.jpg" width="100%" alt="Trending clothes">
         </div>
 
         <div class="slider-right-button">
@@ -88,7 +88,7 @@
     </div>
 
     <!-- Brands -->
-    <section class="ml-5 mr-5 md:mb-20 ">
+    <section class="ml-5 mr-5 ">
         <h2 class="mt-5 text-3xl font-bold">Brands</h2>
         <nav class=" brands-item flex justify-between mt-8 text-xs md:text-4xl">
             <div>
@@ -122,6 +122,40 @@
         </nav>
     </section>
 
+    <!--Customer Reviews-->
+    <section class="review ml-5 mr-5">
+        <div class="grid grid-cols-2" >
+            <div class="text-left text-2xl font-bold">
+                <h1>We Provide Best</h1>
+                <h1>Customer Experiences</h1>
+            </div>            
+            <p class="text-xl">|| We ensure that our customer have the best shopping experience</p>
+        </div>
+        
+
+        <div class="text-left grid grid-cols-4 gap-2" >
+            <div class="bg-gray-100 rounded p-2">
+                <i class="fa-regular fa-circle-check" style="color: #0a0a0a;"></i>
+                <h2 class="text-black font-bold">Original Products</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                
+            </div>
+            <div class="bg-gray-100 text-black rounded p-2">
+                <i class="fa-regular fa-face-smile" style="color: #0f0f0f;"></i>
+                <h2 class="text-black font-bold">Satisfaction Guarantee</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                
+            </div>
+            <div class="bg-gray-100 text-black rounded p-2">
+                <i class="fa-solid fa-broom" style="color: #121212;"></i>
+                <h2 class="text-black font-bold">New Arrival Everday</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                
+            </div>
+            <div class="bg-gray-100 text-black rounded p-2">
+                <i class="fa-solid fa-truck-fast" style="color: #121212;"></i>
+                <h2 class=" text-black font-bold">Fast & Free Shipping</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>                
+            </div>
+        </div>
+    </section>
     
     <!-- New Arrivals -->
     <section id="new-arrival" class="ml-5 mr-5">
@@ -152,51 +186,68 @@
     </section>
 
     <!-- Most Wanted -->
-    <div id="most-wanted" class="init-animate reveal-animate">
-        <h2 class="mt-10 text-2xl font-bold" style=" margin-top: 5vw;">Most Wanted</h2>
-        <div class=" most-wanted">
+    <section id="most-wanted" class="ml-5 mr-5 mt-20">
+        <h2 class="text-2xl font-bold">Most Wanted</h2>
+        
+        <div class="most-wanted">        
             <div class="most-wanted-container">
-                <img style="width: 20vw;" src="./images/MostWanted_img1.jpg" alt="Most wanted">
+                <img src="./images/MostWanted_img1.jpg" alt="Most wanted">
                 <p class="sale-overlay">sale</p>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>
             </div>
             <div class="most-wanted-container">
-                <img style="width: 20vw;" src="./images/NewArrival_img1.jpg" alt="Most wanted">
+                <img src="./images/NewArrival_img1.jpg" alt="Most wanted">
                 <p class="sale-overlay">sale</p>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>
             </div>
             <div class="most-wanted-container">
-                <img style="width: 20vw;" src="./images/NewArrival_img3.png" alt="Most wanted">
+                <img src="./images/NewArrival_img3.png" alt="Most wanted">
                 <p class="sale-overlay">sale</p>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>
             </div>
             <div class="most-wanted-container">
-                <img style="width: 20vw;" src="./images/NewArrival_img4.png" alt="Most wanted">
+                <img src="./images/NewArrival_img4.png" alt="Most wanted">
                 <p class="sale-overlay">sale</p>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>
             </div>
             <div class="most-wanted-container">
-                <img style="width: 20vw;" src="./images/MostWanted_img3.jpg" alt="Most wanted">
+                <img src="./images/MostWanted_img3.jpg" alt="Most wanted">
+                <p class="sale-overlay">sale</p>                
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>
+            </div>
+            <div class="most-wanted-container">
+                <img src="/images/NewArrival_img2.jpg" alt="Most wanted">
                 <p class="sale-overlay">sale</p>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>             
             </div>
             <div class="most-wanted-container">
-                <img style="width: 20vw;" src="/images/NewArrival_img2.jpg" alt="Most wanted">
-                <h3 class="sale-overlay">sale</h3>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
-                <p></p>
-            </div>
-            <div class="most-wanted-container">
-                <img style="width: 20vw;" src="./images/MostWanted_img5.png" alt="Most wanted">
+                <img src="./images/MostWanted_img5.png" alt="Most wanted">
                 <p class="sale-overlay">sale</p>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>
             </div>
             <div class="most-wanted-container">
-                <img style="width: 20vw;" src="./images/MostWanted_img7.png" alt="Most wanted">
+                <img src="./images/MostWanted_img7.png" alt="Most wanted">
                 <p class="sale-overlay">sale</p>
-                <img class="heart-button" src="./images/heart.png" alt="Like">
+                <div class="heart-button"> 
+                    <i class="fa-regular fa-heart" style="color: #1a1a1a;"></i>
+                </div>
+               
             </div>
-        </div>
+        </div>    
     </section>
 
     <!--Join our News Letter-->

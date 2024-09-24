@@ -28,14 +28,17 @@ var sliderRightButton = document.getElementById("slider-right-activate");
 var sliderImage = document.querySelector(".slider-image-container");
 var sliderMargin = 0; // Initial margin
 var totalImages = document.querySelectorAll(".slider-image").length; // Get the total number of images
-var maxMargin = (totalImages - 1) * 100; // Adjust the max margin based on the number of images
+var maxMargin = (totalImages-1) * 100; // Adjust the max margin based on the number of images
 
 // Move slider to the right
-sliderRightButton.addEventListener("click", function () {
-    sliderMargin += 100; // Move to the next slide
+sliderRightButton.addEventListener("click", function () {    
+    
 
-    if (sliderMargin > maxMargin) {        
-        sliderMargin = -100; // If at the last slide, loop back to the first slide
+    if (sliderMargin == maxMargin) {        
+        sliderMargin = 0; // If at the last slide, loop back to the first slide        
+    }
+    else{
+        sliderMargin += 100; // Move to the next slide
     }
 
     sliderImage.style.marginLeft = `-${sliderMargin}vw`; // Move the slider
@@ -43,11 +46,18 @@ sliderRightButton.addEventListener("click", function () {
 
 // Move slider to the left
 sliderLeftButton.addEventListener("click", function () {
-    sliderMargin -= 100; // Move to the previous slide
+    
 
-    if (sliderMargin < 0) {
+    if (sliderMargin == 0) {
         sliderMargin = maxMargin; // If at the first slide, loop back to the last slide
+        console.log(sliderMargin)
+        console.log(maxMargin)
+    }
+    else
+    {
+        sliderMargin -= 100; // Move to the previous slide
     }
 
     sliderImage.style.marginLeft = `-${sliderMargin}vw`; // Move the slider
 });
+
